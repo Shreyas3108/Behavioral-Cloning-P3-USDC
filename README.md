@@ -40,9 +40,10 @@ I tried both the models and VGG outperforms NVIDIA model. But this could be due 
 
 There are few changes made on the model's end as opposed to the original NVIDIA end to end architecture. 
 
-The summary of the architecture i used is this :- 
+The summary of the architecture i used is this :-
+====================================================================================================
 ____________________________________________________________________________________________________
-Layer (type)                     Output Shape          Param #     Connected to                     
+Layer (type)             |        Output Shape      |    Param   |   Connected to                     
 ====================================================================================================
 lambda_1 (Lambda)                (None, 66, 200, 3)    0           lambda_input_1[0][0]             
 ____________________________________________________________________________________________________
@@ -98,8 +99,8 @@ The model was trained for 3 epochs with batch size being 128. Adam optimizer was
 
 The idea was to build a model which could run in the lowest possible epoch due to machine constraint. I used VGG16 Architecture at first but it was really slow and the problem is more of what degree to steer instead of what direction to steer , So few changes were to be made. For this reason , I used 4 Layer convolutional network with relu along with 3 Fully connected layer's as my final output.I used normalized image and trained the data again on 3 epochs with batch size being 128 , loss function of mean squared error. 
 Here's the architecture i used , 
-
-Layer (type)                     Output Shape          Param #     Connected to                     
+====================================================================================================
+Layer (type)      |               Output Shape  |        Param |    Connected to                     
 ====================================================================================================
 lambda_1 (Lambda)                (None, 49, 224, 3)    0           lambda_input_1[0][0]             
 ____________________________________________________________________________________________________
