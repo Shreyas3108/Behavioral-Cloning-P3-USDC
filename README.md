@@ -83,7 +83,7 @@ The model took around 15 minutes to train. There were changes which were to be m
   ``` python drive.py model.h5 ```
 ## Video of the car driving 
 Using VGG at Speed 17 
-![Running of the car at 17kmpl](https://youtu.be/14PhbDHrwVk) 
+[![Running of the car at 17kmpl](https://youtu.be/14PhbDHrwVk/0.jpg)](https://youtu.be/14PhbDHrwVk) 
 The model performed better at Slower speed using VGG best being achieved at speed limit set as 12 in the drive.py file. 
 
 Unfortunately NVIDIA model doesn't make the cut as it leaves the circuit and then returns back at one particular curve (U-Turn). But i happen to infer that maybe a more epoch could do the trick , Which i leave it for future. 
